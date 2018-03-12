@@ -1,0 +1,41 @@
+{
+  "name": "jpcm-base-react-webpack4",
+  "version": "1.0.0",
+  "description": "Skeleton app with React + Webpack4 + Redux + code Splitting",
+  "main": "index.js",
+  "author": "JoaoPauloCMarra",
+  "license": "ISC",
+  "scripts": {
+    "precommit": "lint-staged",
+    "start": "npm run dev",
+    "start-prod": "npm run prod",
+    "dev": "webpack-dev-server --mode development --open",
+    "prod": "webpack-dev-server --mode production --open",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": ["prettier --single-quote --write", "git add"]
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.0.6",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
