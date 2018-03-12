@@ -15,7 +15,12 @@ module.exports = {
         use: [
           {
             loader: 'html-loader',
-            options: { minimize: true }
+            options: {
+              collapseWhitespace: false,
+              minimize: true,
+              removeComments: false,
+              useShortDoctype: true
+            }
           }
         ]
       }
