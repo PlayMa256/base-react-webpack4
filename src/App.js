@@ -5,7 +5,7 @@ const Home = ComponentLoader('Home');
 
 class App extends React.Component {
   render() {
-    return <h1>implementing...</h1>;
+    return <h3>implementing...</h3>;
   }
 }
 

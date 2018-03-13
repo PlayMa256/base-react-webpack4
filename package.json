@@ -9,16 +9,13 @@
     "precommit": "lint-staged",
     "start": "npm run dev",
     "start-prod": "npm run prod",
-    "dev": "webpack-dev-server --mode development --open",
+    "dev": "webpack-dev-server --mode development --hot --open",
     "prod": "webpack-dev-server --mode production --open",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
-      "prettier --single-quote --write",
-      "git add"
-    ]
+    "src/**/*.{js,jsx,json,css}": ["prettier --single-quote --write", "git add"]
   },
   "dependencies": {
     "react": "^16.2.0",
@@ -32,6 +29,7 @@
     "babel-preset-airbnb": "^2.4.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.9.0",
